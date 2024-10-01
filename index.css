@@ -1,0 +1,150 @@
+/* Общие стили для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для тела страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbeef5; /* Нежный розовый фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Контейнер для всей страницы */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Блок с заголовком */
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Аватарка с эмодзи */
+.avatar {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+/* Заголовок */
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Описание под заголовком */
+.description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Социальные ссылки */
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Блок "О себе" */
+.about {
+    margin-top: 30px;
+}
+
+.about h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Блок с проектами */
+.projects {
+    margin-top: 30px;
+}
+
+.projects h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Оформление карточек проектов */
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #eaeaea;
+    transform: translateY(-3px); /* Эффект при наведении */
+}
+
+/* Содержание проекта */
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Стрелка в карточке проекта */
+.arrow {
+    font-size: 24px;
+    color: #777;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .project-link {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .arrow {
+        margin-top: 10px;
+    }
+}
