@@ -164,12 +164,10 @@ body {
 /* Анимация появления для заголовков и блока "О себе" */
 .header, .about {
     animation: fadeIn 0.6s ease forwards;
-    animation-delay: 0.2s;
 }
 
 .projects h2 {
     animation: fadeIn 0.6s ease forwards;
-    animation-delay: 0.4s;
 }
 
 /* Адаптивные стили для экранов меньше 768px */
